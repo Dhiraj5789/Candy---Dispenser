@@ -14,3 +14,21 @@ text-align: left;
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+.glow {
+  font-size: 80px;
+  color: #cbbae8;
+  text-align: center;
+  animation: glow .5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px violet, 0 0 15px indigo, 0 0 20px blue, 0 0 25px green, 0 0 30px yellow, 0 0 35px orange, 0 0 40px red;
+  }
+  
+  to {
+    text-shadow: 0 0 10px red, 0 0 20px orange, 0 0 25px yellow, 0 0 30px green, 0 0 35px blue, 0 0 40px indigo, 0 0 45px violet;
+
+  }
+}

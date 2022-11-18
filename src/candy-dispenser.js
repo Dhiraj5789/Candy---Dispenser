@@ -11,7 +11,9 @@ export const CandyDispenser = () => {
       <h2>Candy Dispenser</h2>
       Available candies
       {candies.length === 0 ? (
-        <button onClick={() => setCandies(intitialCandies)}>Refill</button>
+        <button onClick={() => setCandies(intitialCandies)} className="glow">
+          Refill
+        </button>
       ) : (
         <ul>
           {candies.map((candy) => (
